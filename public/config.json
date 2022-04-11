@@ -81,14 +81,14 @@
                     {
                         "accountSid": {
                             "dataType": "String",
-                            "isNullable": false,
+                            "isNullable": true,
                             "direction": "out"   
                         }
                     },                    
                     {
                         "authToken": {
                             "dataType": "String",
-                            "isNullable": false,
+                            "isNullable": true,
                             "direction": "out"   
                         }
                     },                    
@@ -102,14 +102,14 @@
                     {
                         "to": {
                             "dataType": "Phone",
-                            "isNullable": false,
+                            "isNullable": true,
                             "direction": "out"   
                         }
                     },
                     {
                         "body": {
                             "dataType": "String",
-                            "isNullable": false,
+                            "isNullable": true,
                             "direction": "out"   
                         }
                     },                    
