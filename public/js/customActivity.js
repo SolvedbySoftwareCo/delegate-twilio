@@ -100,7 +100,7 @@ define([
             "authToken": authToken,
             "messagingService": messagingService,
             "body": body,
-            "to": "{{Contact.Attribute.Stage Changes - 2021-11-22T121756537.Opportunity:Account:PersonMobilePhone}}" //<----This should map to your data extension name and phone number column
+            "to": "{{Contact.Attribute.StageChange.Opportunity:Account:PersonMobilePhone}}" //<----This should map to your data extension name and phone number column
         }];
 
         payload['metaData'].isConfigured = true;

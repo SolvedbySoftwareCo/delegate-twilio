@@ -7,7 +7,7 @@
     "type": "REST",
     "lang": {
        "en-US": {
-           "name": "Heroku Twilio SMS V7",
+           "name": "Heroku Twilio SMS V9",
            "description": "Send Twilio SMS with Journey Builder",
            "TwilioMessage":"test"
        }
@@ -49,14 +49,6 @@
        },
        "validate": {
            "url": "https://delegate-twilio.herokuapp.com/journeybuilder/validate",
-            "verb": "POST",
-            "body": "",
-            "format": "json",
-            "useJwt": false,
-            "timeout": 2000
-       },
-       "stop": {
-           "url": "https://delegate-twilio.herokuapp.com/stop",
             "verb": "POST",
             "body": "",
             "format": "json",
