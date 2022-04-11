@@ -7,7 +7,7 @@
     "type": "REST",
     "lang": {
        "en-US": {
-           "name": "Heroku Twilio SMS",
+           "name": "Heroku Twilio SMS V2",
            "description": "Send Twilio SMS with Journey Builder",
            "TwilioMessage":"test"
        }
@@ -32,7 +32,7 @@
     "configurationArguments": {
       "applicationExtensionKey": "d3b5e966-8d29-440b-a4bc-97e7a386b7fc",
        "save": {
-           "url": "https://delegate-twilio.herokuapp.com/journeybuilder/save",
+           "url": "https://delegate-twilio.herokuapp.com/save",
             "verb": "POST",
             "body": "",
             "format": "json",
