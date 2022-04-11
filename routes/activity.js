@@ -50,7 +50,7 @@ function logData(req) {
 /*
  * POST Handler for / route of Activity (this is the stop route).
  */
-exports.edit = function (req, res) {
+exports.stop = function (req, res) {
 
     console.log("5 -- For Stop");	
     console.log("4");	
