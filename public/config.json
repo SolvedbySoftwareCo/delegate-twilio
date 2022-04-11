@@ -7,7 +7,7 @@
     "type": "REST",
     "lang": {
        "en-US": {
-           "name": "Heroku Twilio SMS V9",
+           "name": "Heroku Twilio SMS V10",
            "description": "Send Twilio SMS with Journey Builder",
            "TwilioMessage":"test"
        }
