@@ -48,6 +48,24 @@ function logData(req) {
 }
 
 /*
+ * POST Handler for / route of Activity (this is the stop route).
+ */
+exports.edit = function (req, res) {
+
+    console.log("5 -- For Stop");	
+    console.log("4");	
+    console.log("3");	
+    console.log("2");	
+    console.log("1");	
+    //console.log("Edited: "+req.body.inArguments[0]);    
+    
+    // Data from the req and put it in an array accessible to the main app.
+    //console.log( req.body );
+    logData(req);
+    res.send(200, 'Stop');
+};
+
+/*
  * POST Handler for / route of Activity (this is the edit route).
  */
 exports.edit = function (req, res) {
