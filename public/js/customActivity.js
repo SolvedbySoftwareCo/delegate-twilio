@@ -100,7 +100,7 @@ define([
             "authToken": authToken,
             "messagingService": messagingService,
             "body": body,
-            "to": "{{Opportunity:Account:PersonMobilePhone}}" //<----This should map to your data extension name and phone number column
+            "to": "{{Contact.Attribute.Contacts_with_phone.+13038816946}}" //<----This should map to your data extension name and phone number column
         }];
 
         payload['metaData'].isConfigured = true;
