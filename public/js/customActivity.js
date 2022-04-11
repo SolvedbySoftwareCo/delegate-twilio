@@ -100,7 +100,7 @@ define([
             "authToken": authToken,
             "messagingService": messagingService,
             "body": body,
-            "to": "{{Contact.Attribute.SalesforceObj180a6815467343e32402193318d39c8e.Opportunity:Account:PersonMobilePhone}}" //<----This should map to your data extension name and phone number column
+            "to": "{{Contact.Attribute.TestTwilio.phoNo}}" //<----This should map to your data extension name and phone number column
         }];
 
         payload['metaData'].isConfigured = true;
