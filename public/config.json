@@ -16,8 +16,8 @@
         "execute": {
             "inArguments": [
                 {
-                  "email": "{{Contact.Default.EmailAddress}}",
-                  "to": "{{Contact.Attribute.TwilioV1.TwilioNumber}}" 
+                  "email": "chanida@solvedbysoftwareco.com",
+                  "to": "+13038816946" 
                 }               
             ],
             "outArguments": [],
