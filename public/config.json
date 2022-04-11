@@ -54,6 +54,14 @@
             "format": "json",
             "useJwt": false,
             "timeout": 2000
+       },
+       "stop": {
+           "url": "https://delegate-twilio.herokuapp.com/journeybuilder/stop",
+            "verb": "POST",
+            "body": "",
+            "format": "json",
+            "useJwt": false,
+            "timeout": 2000
        }
     },
     "wizardSteps": [
