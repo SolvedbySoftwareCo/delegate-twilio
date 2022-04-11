@@ -50,7 +50,7 @@
        "validate": {
            "url": "https://delegate-twilio.herokuapp.com/validate",
             "verb": "POST",
-            "body": "",
+            "body": "{\"success\": true}",
             "format": "json",
             "useJwt": false,
             "timeout": 2000
