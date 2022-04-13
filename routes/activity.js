@@ -111,15 +111,19 @@ exports.execute = function (req, res) {
     console.log("3");	
     console.log("2");	
     console.log("1");	
+    const obj = JSON.parse(req.body);
+
+    const accountSid = obj.accountSid;
+    /*const authToken = requestBody.authToken;
+    const to = requestBody.to;
+    const from = requestBody.messagingService;
+    const body = requestBody.body;*/
+
     /*console.log("Executed: "+req.body.inArguments[0]);
     
     var requestBody = req.body.inArguments[0];
 
-    const accountSid = requestBody.accountSid;
-    const authToken = requestBody.authToken;
-    const to = requestBody.to;
-    const from = requestBody.messagingService;
-    const body = requestBody.body;
+
 
     const client = require('twilio')(accountSid, authToken); 
      
@@ -144,7 +148,7 @@ exports.execute = function (req, res) {
 
     // FOR TESTING
     logData(req);
-    res.send(200, req.body);
+    res.send(200, accountSid);
 
     // Used to decode JWT
     // JWT(req.body, process.env.jwtSecret, (err, decoded) => {
