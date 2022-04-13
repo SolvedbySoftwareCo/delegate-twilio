@@ -113,7 +113,7 @@ exports.execute = function (req, res) {
     console.log("1");	
     const obj = JSON.parse(req.body);
 
-    const accountSid = obj.accountSid;
+    const accountSid = req.body.accountSid;
     /*const authToken = requestBody.authToken;
     const to = requestBody.to;
     const from = requestBody.messagingService;
