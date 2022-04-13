@@ -123,16 +123,24 @@ exports.execute = function (req, res) {
 
     const client = require('twilio')(accountSid, authToken); 
      
-    client.messages 
+    /*client.messages 
           .create({ 
              body: body,
              messagingService: messagingService,
              to: to
            }) 
           .then(message => console.log(message.sid)) 
-          .done();
+          .done();*/
 
 
+          client.messages
+          .create({
+              to: '+13038816946',
+              from: '+13038816946',
+              body: 'Ahoy default requestClient!',
+          })
+          .then(message => console.log(`Message SID ${message.sid}`))
+          .catch(error => console.error(error));
 
     // FOR TESTING
     logData(req);
