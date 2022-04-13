@@ -111,7 +111,7 @@ exports.execute = function (req, res) {
     console.log("3");	
     console.log("2");	
     console.log("1");	
-    const obj = JSON.parse(req.body);
+    //const obj = JSON.parse(req.body);
 
    // const accountSid = obj.accountSid;
     /*const authToken = requestBody.authToken;
@@ -148,7 +148,7 @@ exports.execute = function (req, res) {
 
     // FOR TESTING
     logData(req);
-    res.send(200, req.body);
+    res.send(200, '');
     //res.send(200,accountSid);
 
     // Used to decode JWT
