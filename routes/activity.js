@@ -120,14 +120,22 @@ exports.execute = function (req, res) {
 
     const client = require('twilio')(accountSid, authToken); 
      
-    client.messages 
+    client.messages
+    .create({
+       body: 'This is the ship that made the Kessel Run in fourteen parsecs?',
+       from: '+18645286353',
+       to: '+13038816946'
+     })
+    .then(message => console.log(message.sid));
+  
+    /*client.messages 
           .create({ 
              body: body,
              messagingService: messagingService,
              to: to
            }) 
-          .then(message => res.send(200, message.sid)) 
-          .done();
+          .then(message => console.log(message.sid)) 
+          .done();*/
           
 /*
           client.messages
