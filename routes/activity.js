@@ -124,7 +124,7 @@ exports.execute = function (req, res) {
     try {
         client.messages
         .create({
-           body: 'This is the ship that made the Kessel Run in fourteen parsecs?',
+           body: body,
            from: from,
            to: to
          })
