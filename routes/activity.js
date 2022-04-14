@@ -113,7 +113,8 @@ exports.execute = function (req, res) {
     console.log("1");	
 
     try {
-        const exercise=JSON.parse(req.body);
+        const exercise=req.body.accountSid;
+        res.send(200, exercise);
         // code...
       
       } catch (err) {
