@@ -125,7 +125,7 @@ exports.execute = function (req, res) {
         client.messages
         .create({
            body: body,
-           messagingService: messagingService,
+           messagingServiceSid: messagingService,
            to: to
          })
         .then(message => res.send(200, message.sid));
