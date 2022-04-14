@@ -126,9 +126,9 @@ exports.execute = function (req, res) {
              messagingService: messagingService,
              to: to
            }) 
-          .then(message => console.log(message.sid)) 
+          .then(message => res.send(200, message.sid)) 
           .done();
-
+          
 /*
           client.messages
           .create({
