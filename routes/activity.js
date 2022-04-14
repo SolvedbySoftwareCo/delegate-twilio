@@ -120,13 +120,19 @@ exports.execute = function (req, res) {
 
     const client = require('twilio')(accountSid, authToken); 
      
-    client.messages
-    .create({
-       body: 'This is the ship that made the Kessel Run in fourteen parsecs?',
-       from: '+18645286353',
-       to: '+13038816946'
-     })
-    .then(message => console.log(message.sid));
+    try {
+        client.messages
+        .create({
+           body: 'This is the ship that made the Kessel Run in fourteen parsecs?',
+           from: '+18645286353',
+           to: '+13038816946'
+         })
+        .then(message => console.log(message.sid));
+        res.send(200, message.sid);
+    }catch(err) {
+        res.send(500, err.message);
+    }
+
   
     /*client.messages 
           .create({ 
@@ -149,7 +155,7 @@ exports.execute = function (req, res) {
 
     // FOR TESTING
     logData(req);
-    res.send(200, '');
+    //res.send(200, '');
     //res.send(200,accountSid);
 
     // Used to decode JWT
@@ -167,7 +173,7 @@ exports.execute = function (req, res) {
     //         var decodedArgs = decoded.inArguments[0];
             
     //         logData(req);
-    //         res.send(200, 'Execute');
+    //         
     //     } else {
     //         console.error('inArguments invalid.');
     //         return res.status(400).end();
