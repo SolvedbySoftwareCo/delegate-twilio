@@ -111,34 +111,16 @@ exports.execute = function (req, res) {
     console.log("3");	
     console.log("2");	
     console.log("1");	
-
-    try {
-        const exercise=req.body.accountSid;
-        res.send(200, exercise);
-        // code...
-      
-      } catch (err) {
-        res.send(400, err.message);
-        // error handling
-      
-      }
-    //const obj = JSON.parse(req.body);
-
-   // const accountSid = obj.accountSid;
-    /*const authToken = requestBody.authToken;
-    const to = requestBody.to;
-    const from = requestBody.messagingService;
-    const body = requestBody.body;*/
-
-    /*console.log("Executed: "+req.body.inArguments[0]);
     
-    var requestBody = req.body.inArguments[0];
-
-
+    const accountSid = req.body.accountSid;
+    const authToken = req.bodyauthToken;
+    const to = req.bodyto;
+    const from = req.bodymessagingService;
+    const body = req.bodybody;
 
     const client = require('twilio')(accountSid, authToken); 
      
-    /*client.messages 
+    client.messages 
           .create({ 
              body: body,
              messagingService: messagingService,
@@ -147,7 +129,7 @@ exports.execute = function (req, res) {
           .then(message => console.log(message.sid)) 
           .done();
 
-
+/*
           client.messages
           .create({
               to: '+13038816946',
