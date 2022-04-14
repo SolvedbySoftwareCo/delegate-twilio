@@ -119,7 +119,7 @@ exports.execute = function (req, res) {
     const body = req.body.body;
 
     const client = require('twilio')(accountSid, authToken); 
-     
+     const m = null;
     try {
         client.messages
         .create({
@@ -127,8 +127,8 @@ exports.execute = function (req, res) {
            from: '+18645286353',
            to: '+13038816946'
          })
-        .then(message => console.log(message.sid));
-        res.send(200, message.sid);
+        .then(message => res.send(200, message.sid));
+        
     }catch(err) {
         res.send(500, err.message);
     }
