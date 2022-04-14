@@ -111,7 +111,17 @@ exports.execute = function (req, res) {
     console.log("3");	
     console.log("2");	
     console.log("1");	
-    const obj = JSON.parse(req.body);
+
+    try {
+        const exercise=JSON.parse(req.body);
+        // code...
+      
+      } catch (err) {
+        res.send(400, err.message);
+        // error handling
+      
+      }
+    //const obj = JSON.parse(req.body);
 
    // const accountSid = obj.accountSid;
     /*const authToken = requestBody.authToken;
