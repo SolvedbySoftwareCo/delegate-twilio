@@ -96,7 +96,7 @@ define([
         var body = $('#messageBody').val();
 
         payload['arguments'].execute.inArguments = [{
-            "accountSid": "{{Contact.Attribute.StageChange1.AuthToken}}",
+            "accountSid": "{{Contact.Attribute.StageChange1.AccountSid}}",
             "authToken": "{{Contact.Attribute.StageChange1.AuthToken}}",
             "messagingService": "{{Contact.Attribute.StageChange1.MessagingService}}",
             "body": "{{Contact.Attribute.StageChange1.CustomMessage}}",
