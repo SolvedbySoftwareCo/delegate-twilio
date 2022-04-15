@@ -96,10 +96,10 @@ define([
         var body = $('#messageBody').val();
 
         payload['arguments'].execute.inArguments = [{
-            "accountSid": accountSid,
-            "authToken": authToken,
-            "messagingService": messagingService,
-            "body": body,
+            "accountSid": "{{Contact.Attribute.StageChange1.AuthToken}}",
+            "authToken": "{{Contact.Attribute.StageChange1.AuthToken}}",
+            "messagingService": "{{Contact.Attribute.StageChange1.MessagingService}}",
+            "body": "{{Contact.Attribute.StageChange1.CustomMessage}}",
             "to": "{{Contact.Attribute.StageChange1.Opportunity:Account:PersonMobilePhone}}" //<----This should map to your data extension name and phone number column
         }];
 
