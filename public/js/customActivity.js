@@ -99,7 +99,7 @@ define([
             "accountSid": "{{Contact.Attribute.StageChange1.AccountSid}}",
             "authToken": "{{Contact.Attribute.StageChange1.AuthToken}}",
             "messagingService": "{{Contact.Attribute.StageChange1.MessagingService}}",
-            "body": "{{Contact.Attribute.StageChange1.CustomMessage}}",
+            "body": "{{Contact.Attribute.StageChange1.Opportunity:SMS_Message__c}}",
             "to": "{{Contact.Attribute.StageChange1.Opportunity:Account:PersonMobilePhone}}" //<----This should map to your data extension name and phone number column
         }];
 
